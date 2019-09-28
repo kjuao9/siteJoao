@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta author="João Paulo S. Costa">
 
     <!-- Bootstrap CSS -->
 
@@ -16,12 +17,15 @@
 
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-  <a class="navbar-brand" href="#">
-  <img src="../imagens/logo.png" alt="Logo" style="width:40px;">
-  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <a class="navbar-brand" href="index.php">
+  <img src="./imagens/logo.png" alt="Logo" style="height:60px;">
+  <!-- <p><h1><span style="font-family: Old English Text MT Regular">J</span></h1></p> -->
+  </a>
+  
+
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
@@ -49,6 +53,8 @@
   <div id="fonte_old_english" class=".col-6 text-white">
     <!-- <h2 style="font-family: Old English Text MT Regular">The Janaúba Times</h2> -->
 </div>
+<!-- colocar p/ o butão fechar -->
+
 </nav>
 
 
