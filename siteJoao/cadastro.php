@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php 
+include_once "conexao.php";
+include "includes/funcoes.php";
+
+
+$con = conecta_mysql();
+
+?>
 <html lang="pt-Br">
   <head>
     <!-- Required meta tags -->
@@ -21,10 +29,10 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="index.php">
-  <img src="/imagens/logo.png" alt="Logo" style="height:60px;">
+  <!-- <a class="navbar-brand" href="index.php"> -->
+  <!-- <img src="/imagens/logo.png" alt="Logo" style="height:60px;"> -->
   <!-- <p><h1><span style="font-family: Old English Text MT Regular">J</span></h1></p> -->
-  </a>
+  <!-- </a> -->
   
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -67,7 +75,7 @@
 <br/>
 <br/>
 <div class="container">
-<form action="/action_page.php" method="post" class="needs-validation" novalidate>
+<form action="" method="post" class="needs-validation" novalidate>
   <div class="form-group">
     <label for="nome">Nome:</label>
     <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome" name="nome" required>
@@ -94,7 +102,7 @@
   </div>
   <div class="form-group form-check">
     <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember" required> Eu concordo e aceito os <span><a href=#>termos de condição</a></span>.
+      <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os <span><a href=#>termos de condição</a></span>.
       <div class="valid-feedback">Válido.</div>
       <div class="invalid-feedback">Marque esta caixa para continuar.</div>
     </label>
@@ -124,6 +132,47 @@
   }, false);
 })();
 </script>
+<?php 
+if(isset($_POST["nome"])){
+  $nome = $_POST["nome"];
+  $email = $_POST["email"];
+  $senha = $_POST["senha"];
+  $senha2 = $_POST["senha2"];
+
+  if($senha == $senha2){
+    $senha = md5($senha);
+      if($con){
+      // verificar email;
+      if(verificar_email($con, $email)){
+      $sql = "INSERT INTO usuarios (nome, email, senha)
+      values('$nome', '$email', '$senha')";
+      $resultado = mysqli_query($con, $sql);
+        if($resultado){
+          print "<script>
+          alert('Usuário Inserido');
+          window.location.href=window.location.href;
+        </script>";
+                }
+          
+  else{
+    print "erro de SQL";
+    }#else da conexão
+      }//if que verifica email
+      else{
+        print"Este e-mail já existe, escolha outro e-mail.";
+      }
+    }#if da conexão
+else{
+            
+  print "<script>
+  alert('Suas senhas são diferentes')
+  </script>";
+}#else do if que verifica as senhas
+}#if que verifica as senhas
+}
+
+
+?>
 
 
     <!-- Optional JavaScript -->

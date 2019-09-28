@@ -1,0 +1,184 @@
+/*Inserir as formatações css aqui */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #f3f3f3
+}
+
+fieldset{
+	padding: 25px;
+	background: #f3f3f3;
+	width: 65%;
+	margin: 20px auto;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	border: 1px solid #999;
+}
+
+textarea{
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+h2{
+  color: #b9c941;
+}
+p{
+  text-align: justify;
+  padding: 2 0 2 0;
+}
+
+/* ======================================== 
+=====================IDS 
+===========================================*/
+#navegacao{
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  height: 45px;
+}
+#area{
+  width: 920px;
+  margin: 0 auto;
+}
+
+#area-principal{
+  width: 920px;
+  margin: 10px auto 10px auto;
+}
+#postagem{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#menu{
+  float: right;
+  padding: 10px 0 10px 0;
+}
+#logo{
+  float: left;
+}
+
+/*FORMATAÇÃO DO ARQUIVO DAS POSTAGENS.*/
+#div-area-principal{
+  width: 920px;
+  margin: 10px auto 10px auto;
+}
+#div-pessoal{
+  background: #fff;
+  width: 230px;
+  padding: 10px;
+  color: gray;
+  margin: 0 8px 10px 0;
+  float: left;
+}
+#div-postagem{
+  background: #fff;
+  width: 470px;
+  padding: 10px;
+  margin: 0 8px 10px 0;
+  float: left
+}
+
+#div-procurar-pessoa{
+  background: #fff;
+  padding: 10px;
+  margin: 0px auto 10px auto;
+  float: left;
+
+}
+/*fim da formatação do arquivo de postagem de mensagem */
+
+#menu a{
+  text-decoration: none;
+  padding: 9px;
+}
+#menu a:link{
+  color: #838383
+}
+#menu a:visited{
+  color: #838383;
+}
+#menu a:hover{
+  color: #fff;
+  background: #b9c941;
+}
+#menu a:active{
+  color: #535353;
+}
+
+/*limpando elementos flutuantes*/
+.clear{
+		clear: both;
+}
+
+/* ======================================== 
+=====================CLASSES 
+===========================================*/
+.borda-arredondada{
+  border-radius: 10px;
+}
+.transparencia{
+    color: rgba(0,0,0,0.2);
+}
+.verde{
+    color: #b9c941;
+}
+.data-postagem{
+  font-size: 14px;
+  border-bottom: 1px solid #f4f4f4;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.img-postagem{
+  float: left;
+  margin: 0 10px 5px 0;
+}
+.postado-por{
+  border-left: 5px solid #d8d8d8;
+  padding-left: 5px;
+  display: block;
+  margin-top: 10px;
+}
+.centralizar{
+  text-align: center;
+}
+.negrito-maior{
+  font-weight: bold;
+  font-size: 14pt;
+}
+.italico{
+  font-style: italic;
+}
+
+/* formatando o formulário*/
+input[type="text"],input[type="email"],input[type="password"]{
+    background-color:#f2f2f2;
+    border:1px solid #000;
+    padding:4px;
+    border-radius: 3px;
+    width: 90%;
+    margin-bottom: 3px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    background-color:#e1e1e1;
+    border:1px solid #333;
+    padding:4px;
+    margin-bottom: 3px;
+
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus {
+    background-color:#F8F8FF;
+    border:1px solid #900;
+    padding:5px;
+    margin-bottom: 3px;
+}

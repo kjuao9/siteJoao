@@ -17,43 +17,43 @@
   <body style="height: 1500px">
 
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="index.php">
-  <img src="/imagens/logo.png" alt="Logo" style="height:60px;">
-  <!-- <p><h1><span style="font-family: Old English Text MT Regular">J</span></h1></p> -->
-  </a>
-  
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<!-- <a class="navbar-brand" href="index.php"> -->
+<!-- <img src="/imagens/logo.png" alt="Logo" style="height:60px;"> -->
+<!-- <p><h1><span style="font-family: Old English Text MT Regular">J</span></h1></p> -->
+<!-- </a> -->
 
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Página Inicial <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Notícias</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="menu.php">*reservado*</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Usuário
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="login.php">Login</a>
-          <a class="dropdown-item" href="cadastro.php">Cadastro</a>
-          <a class="dropdown-item" href="#">Configurações</a>
-          <a class="dropdown-item" href="#">Sair</a>
-        </div>
-      </li>
-    </ul>
 
-  </div>
-  <div id="fonte_old_english" class=".col-6 text-white">
-    <!-- <h2 style="font-family: Old English Text MT Regular">The Janaúba Times</h2> -->
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.php">Página Inicial <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Notícias</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="menu.php">*reservado*</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Usuário
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="login.php">Login</a>
+        <a class="dropdown-item" href="cadastro.php">Cadastro</a>
+        <a class="dropdown-item" href="#">Configurações</a>
+        <a class="dropdown-item" href="#">Sair</a>
+      </div>
+    </li>
+  </ul>
+
+</div>
+<div id="fonte_old_english" class=".col-6 text-white">
+  <!-- <h2 style="font-family: Old English Text MT Regular">The Janaúba Times</h2> -->
 </div>
 <!-- colocar p/ o butão fechar -->
 

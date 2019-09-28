@@ -21,10 +21,10 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="index.php">
-  <img src="/imagens/logo.png" alt="Logo" style="height:60px;">
+  <!-- <a class="navbar-brand" href="index.php"> -->
+  <!-- <img src="/imagens/logo.png" alt="Logo" style="height:60px;"> -->
   <!-- <p><h1><span style="font-family: Old English Text MT Regular">J</span></h1></p> -->
-  </a>
+  <!-- </a> -->
   
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -33,7 +33,7 @@
         <a class="nav-link" href="index.php">Página Inicial <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Notícias</a>
+        <a class="nav-link" href="noticias.php">Notícias</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="menu.php">*reservado*</a>
