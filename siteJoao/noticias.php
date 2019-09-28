@@ -75,7 +75,20 @@ $con = conecta_mysql();
 <br/>
 <br/>
 <br/>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus commodi sed enim facilis possimus, culpa eos! Molestias officiis tenetur iure! Est veritatis quas neque aspernatur temporibus repellendus minus dignissimos.
+
+<div class="container">
+<p>
+<h2 style="text-align: center">Titulo</h2>
+<h2 style="text-align: center"><small>Subtítulo</small></h2>
+</p>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, illo quis odio facilis nesciunt laudantium possimus, enim odit ea fugit minima unde ex officiis. Nobis laboriosam alias molestias quisquam beatae?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at officia, et impedit nostrum rem quos natus consectetur molestias obcaecati iure ipsum incidunt nesciunt, sit tempore adipisci corrupti esse possimus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, modi eaque? Dolorum corrupti nam magnam vitae harum exercitationem iure ipsam voluptatibus, quibusdam sapiente voluptatem tempore dolores ut veniam fugit iusto.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque at alias incidunt dolorum minima provident omnis odit, fugiat laudantium ipsum tempora maxime veniam vero quo excepturi nemo sed inventore.
+
+</p>
+</div>
 
 
 
