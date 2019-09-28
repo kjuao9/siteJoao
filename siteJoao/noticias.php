@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php 
+include_once "conexao.php";
+include "includes/funcoes.php";
+
+
+$con = conecta_mysql();
+
+?>
 <html lang="pt-Br">
   <head>
     <!-- Required meta tags -->
@@ -7,7 +15,7 @@
     <meta author="João Paulo S. Costa">
 
     <!-- Bootstrap CSS -->
-
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/8104logo.ico">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
@@ -67,48 +75,9 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<div class="container">
-<form action="/action_page.php" method="post" class="needs-validation" novalidate>
-<div class="form-group">
-    <label for="email">E-mail:</label>
-    <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" name="email" required>
-    <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
-  </div>
-  <div class="form-group">
-    <label for="senha">Senha:</label>
-    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required>
-    <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
-  </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus commodi sed enim facilis possimus, culpa eos! Molestias officiis tenetur iure! Est veritatis quas neque aspernatur temporibus repellendus minus dignissimos.
 
-  <button type="submit" class="btn btn-primary">Enviar</button>
-  <button type="reset" class="btn btn-secondary">Limpar</button>
-</form>
-</div>
 
-<script>
-// Disable form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Get the forms we want to add validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
 
 
     <!-- Optional JavaScript -->

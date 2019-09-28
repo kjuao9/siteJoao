@@ -15,7 +15,7 @@ $con = conecta_mysql();
     <meta author="João Paulo S. Costa">
 
     <!-- Bootstrap CSS -->
-
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/8104logo.ico">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
@@ -41,7 +41,10 @@ $con = conecta_mysql();
         <a class="nav-link" href="index.php">Página Inicial <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Notícias</a>
+        <a class="nav-link" href="noticias.php">Notícias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="galeria.php">Galeria</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="menu.php">*reservado*</a>

@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php 
+include_once "conexao.php";
+include "includes/funcoes.php";
+
+
+$con = conecta_mysql();
+
+?>
 <html lang="pt-Br">
   <head>
     <!-- Required meta tags -->
@@ -12,7 +20,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
    
-
+    <title>Galeria</title>
   </head>
   <body style="height: 1500px">
 
@@ -68,47 +76,49 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<div class="container">
-<form action="/action_page.php" method="post" class="needs-validation" novalidate>
-<div class="form-group">
-    <label for="email">E-mail:</label>
-    <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" name="email" required>
-    <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
-  </div>
-  <div class="form-group">
-    <label for="senha">Senha:</label>
-    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required>
-    <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
-  </div>
 
-  <button type="submit" class="btn btn-primary">Enviar</button>
-  <button type="reset" class="btn btn-secondary">Limpar</button>
-</form>
+
+<div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/Koala.jpg" class="d-block w-100" alt="abc" style="width:128px height:128px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Penguins.jpg" class="d-block w-100" alt="def" style="width:128px height:128px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Desert.jpg" class="d-block w-100" alt="ghi" style="width:128px height:128px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
 
-<script>
-// Disable form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Get the forms we want to add validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
 
 
     <!-- Optional JavaScript -->

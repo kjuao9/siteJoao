@@ -36,6 +36,9 @@
         <a class="nav-link" href="noticias.php">Notícias</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="galeria.php">Galeria</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="menu.php">*reservado*</a>
       </li>
       <li class="nav-item dropdown">
@@ -58,6 +61,7 @@
 <!-- colocar p/ o butão fechar -->
 
 </nav>
+
 
 
 
