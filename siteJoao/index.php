@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
 
+    <title>index</title>
   </head>
   <body style="height: 1500px">
 
@@ -42,7 +43,7 @@
           Usuário
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Login</a>
+          <a class="dropdown-item" href="login.php">Login</a>
           <a class="dropdown-item" href="cadastro.php">Cadastro</a>
           <a class="dropdown-item" href="#">Configurações</a>
           <a class="dropdown-item" href="#">Sair</a>

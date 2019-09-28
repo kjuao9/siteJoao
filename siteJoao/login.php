@@ -68,9 +68,9 @@
 <br/>
 <div class="container">
 <form action="/action_page.php" method="post" class="needs-validation" novalidate>
-  <div class="form-group">
-    <label for="nome">Nome:</label>
-    <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome" name="nome" required>
+<div class="form-group">
+    <label for="email">E-mail:</label>
+    <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" name="email" required>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">Por favor, preencha este campo.</div>
   </div>
@@ -80,25 +80,7 @@
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">Por favor, preencha este campo.</div>
   </div>
-  <div class="form-group">
-    <label for="senha2">Repita a senha:</label>
-    <input type="password" class="form-control" id="senha2" placeholder="Digite novamente a senha" name="senha2" required>
-    <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
-  </div>
-  <div class="form-group">
-    <label for="email">E-mail:</label>
-    <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" name="email" required>
-    <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
-  </div>
-  <div class="form-group form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember" required> Eu concordo e aceito os <span><a href=#>termos de condição</a></span>.
-      <div class="valid-feedback">Válido.</div>
-      <div class="invalid-feedback">Marque esta caixa para continuar.</div>
-    </label>
-  </div>
+
   <button type="submit" class="btn btn-primary">Enviar</button>
   <button type="reset" class="btn btn-secondary">Limpar</button>
 </form>

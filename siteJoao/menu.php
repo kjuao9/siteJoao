@@ -42,7 +42,7 @@
           Usuário
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Login</a>
+          <a class="dropdown-item" href="login.php">Login</a>
           <a class="dropdown-item" href="cadastro.php">Cadastro</a>
           <a class="dropdown-item" href="#">Configurações</a>
           <a class="dropdown-item" href="#">Sair</a>
