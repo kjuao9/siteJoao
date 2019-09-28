@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -43,6 +43,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Login</a>
+          <a class="dropdown-item" href="cadastro.php">Cadastro</a>
           <a class="dropdown-item" href="#">Configurações</a>
           <a class="dropdown-item" href="#">Sair</a>
         </div>
