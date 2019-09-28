@@ -11,8 +11,8 @@
 
     <title>Hello, world!</title>
   </head>
-  <body style="background-color: seashell;">
-      <?php include "includes/menu.php";?>
+  <body>
+      <?php include "menu.php";?>
     <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
