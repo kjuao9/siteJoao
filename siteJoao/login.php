@@ -65,7 +65,7 @@ session_start();
 <form action="" method="post" class="needs-validation" novalidate>
 <div class="form-group">
     <label for="email">E-mail:</label>
-    <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" name="email" required>
+    <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" name="email" required autofocus>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">Por favor, preencha este campo.</div>
   </div>

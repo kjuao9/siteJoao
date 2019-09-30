@@ -1,12 +1,13 @@
-<!DOCTYPE html>
 <?php 
 include_once "conexao.php";
 include "includes/funcoes.php";
 
-
+session_start();
 $con = conecta_mysql();
 
 ?>
+
+<!DOCTYPE html>
 <html lang="pt-Br">
   <head>
     <!-- Required meta tags -->
@@ -22,7 +23,23 @@ $con = conecta_mysql();
    
 
   </head>
-  <body style="height: 1500px">
+  <style>
+fieldset {
+  border: 1px;
+  border-color: steelblue;
+  padding: 10px;
+  border-style: solid;
+}
+footer {
+  background-color: skyblue;
+  padding: 0px;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+  </style>
+  <body>
 
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
@@ -64,6 +81,7 @@ $con = conecta_mysql();
 
   </div>
   <div id="fonte_old_english" class=".col-6 text-white">
+  <!-- Transformar o texto abaixo em link -->
     <!-- <h2 style="font-family: Old English Text MT Regular">The Janaúba Times</h2> -->
 </div>
 <!-- colocar p/ o butão fechar -->
@@ -79,9 +97,10 @@ $con = conecta_mysql();
 <br/>
 <div class="container">
 <form action="" method="post" class="needs-validation" novalidate>
+<fieldset>
   <div class="form-group">
     <label for="nome">Nome:</label>
-    <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome" name="nome" required>
+    <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome" name="nome" required autofocus>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">Por favor, preencha este campo.</div>
   </div>
@@ -114,6 +133,7 @@ $con = conecta_mysql();
   </div>
   <button type="submit" class="btn btn-primary">Enviar</button>
   <button type="reset" class="btn btn-secondary">Limpar</button>
+  </fieldset>
 </form>
 </div>
 
@@ -132,6 +152,7 @@ $con = conecta_mysql();
       1-Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.<br/>
       2-O Supremo Criador não se responsabiliza por informações vazadas e fake news.<br/>
       3-A vida é injusta.
+      &#9312;
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -202,6 +223,20 @@ else{
 
 
 ?>
+
+<p>
+<?php
+if(isset($_SESSION["nome"])){
+  print "Você está logado como <strong>".$_SESSION["nome"]."</strong>.";
+}
+else{
+  print "Você não está logado.";
+}
+?>
+</p>
+<footer>
+<p align="center">Todos os direitos reservados.</p>
+</footer>
 
 
     <!-- Optional JavaScript -->
