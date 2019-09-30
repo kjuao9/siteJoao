@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<?php 
+<?php
+session_start();
 include_once "conexao.php";
 include "includes/funcoes.php";
 
@@ -7,6 +7,7 @@ include "includes/funcoes.php";
 $con = conecta_mysql();
 
 ?>
+<!DOCTYPE html>
 <html lang="pt-Br">
   <head>
     <!-- Required meta tags -->
@@ -57,7 +58,7 @@ $con = conecta_mysql();
           <a class="dropdown-item" href="login.php">Login</a>
           <a class="dropdown-item" href="cadastro.php">Cadastro</a>
           <a class="dropdown-item" href="#">Configurações</a>
-          <a class="dropdown-item" href="#">Sair</a>
+          <a class="dropdown-item" href="sair.php">Sair</a>
         </div>
       </li>
     </ul>
@@ -89,6 +90,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque at alias in
 
 </p>
 </div>
+
 
 
 

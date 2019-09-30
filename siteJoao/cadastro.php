@@ -57,7 +57,7 @@ $con = conecta_mysql();
           <a class="dropdown-item" href="login.php">Login</a>
           <a class="dropdown-item" href="cadastro.php">Cadastro</a>
           <a class="dropdown-item" href="#">Configurações</a>
-          <a class="dropdown-item" href="#">Sair</a>
+          <a class="dropdown-item" href="sair.php">Sair</a>
         </div>
       </li>
     </ul>
@@ -105,7 +105,9 @@ $con = conecta_mysql();
   </div>
   <div class="form-group form-check">
     <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os <span><a href=#>termos de condição</a></span>.
+      <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os<span><button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter">
+ termos de condição
+</button></span>.
       <div class="valid-feedback">Válido.</div>
       <div class="invalid-feedback">Marque esta caixa para continuar.</div>
     </label>
@@ -113,6 +115,30 @@ $con = conecta_mysql();
   <button type="submit" class="btn btn-primary">Enviar</button>
   <button type="reset" class="btn btn-secondary">Limpar</button>
 </form>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Termos de condição</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      1-Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.<br/>
+      2-O Supremo Criador não se responsabiliza por informações vazadas e fake news.<br/>
+      3-A vida é injusta.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+   
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
