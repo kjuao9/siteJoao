@@ -58,6 +58,15 @@
 
 </nav>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<img id="myImg" src="imagens/compman.gif" alt="Crazy computerman" width="107" height="98">
+O site está em construção!
 
 
 

@@ -38,6 +38,10 @@ footer {
   padding: 0px;
   margin: 0px;
 }
+.termos{
+height: ;
+padding: 5px;
+}
   </style>
   <body>
 
@@ -106,15 +110,15 @@ footer {
   </div>
   <div class="form-group">
     <label for="senha">Senha:</label>
-    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required>
+    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required minlength="8">
     <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
+    <div class="invalid-feedback">A senha deve ter no minímo 8 caracteres.</div>
   </div>
   <div class="form-group">
     <label for="senha2">Repita a senha:</label>
-    <input type="password" class="form-control" id="senha2" placeholder="Digite novamente a senha" name="senha2" required>
+    <input type="password" class="form-control" id="senha2" placeholder="Digite novamente a senha" name="senha2" required minlength="8">
     <div class="valid-feedback">Válido.</div>
-    <div class="invalid-feedback">Por favor, preencha este campo.</div>
+    <div class="invalid-feedback">A senha deve ter no minímo 8 caracteres e ser idêntica a digitada.</div>
   </div>
   <div class="form-group">
     <label for="email">E-mail:</label>
@@ -124,7 +128,7 @@ footer {
   </div>
   <div class="form-group form-check">
     <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os<span><button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter">
+      <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os<span><button type="button" class="btn btn-link termos" data-toggle="modal" data-target="#exampleModalCenter">
  termos de condição
 </button></span>.
       <div class="valid-feedback">Válido.</div>
@@ -224,7 +228,7 @@ else{
 
 ?>
 
-<p>
+<p class="container">
 <?php
 if(isset($_SESSION["nome"])){
   print "Você está logado como <strong>".$_SESSION["nome"]."</strong>.";
@@ -234,8 +238,8 @@ else{
 }
 ?>
 </p>
-<footer>
-<p align="center">Todos os direitos reservados.</p>
+<footer style="height: 200px;">
+<p align="center">batmannananananbatmannanananananbatmananananana</p>
 </footer>
 
 
