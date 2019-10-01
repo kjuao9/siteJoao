@@ -23,6 +23,33 @@ $con = conecta_mysql();
    
 
   </head>
+  <style>
+
+.borda{
+  border: 1px;
+  border-style: solid;
+
+}
+.bordap{
+  border: 1px;
+  padding: 5px;
+
+  border-style: solid;
+  border-color: red;
+  text-align: justify;
+}
+.imagem{
+height: 50px;
+width: 50px;
+
+}
+.clear{
+  clear: both;
+}
+
+
+
+  </style>
   <body style="height: 1500px">
 
 
@@ -77,12 +104,12 @@ $con = conecta_mysql();
 <br/>
 <br/>
 
-<div class="container">
+<div class="container borda">
 <p>
 <h2 style="text-align: center">Titulo</h2>
 <h2 style="text-align: center"><small>Subtítulo</small></h2>
 </p>
-<p>
+<p class="bordap"><img src="imagens/skifree.png" class="imagem clear">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, illo quis odio facilis nesciunt laudantium possimus, enim odit ea fugit minima unde ex officiis. Nobis laboriosam alias molestias quisquam beatae?
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at officia, et impedit nostrum rem quos natus consectetur molestias obcaecati iure ipsum incidunt nesciunt, sit tempore adipisci corrupti esse possimus.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, modi eaque? Dolorum corrupti nam magnam vitae harum exercitationem iure ipsam voluptatibus, quibusdam sapiente voluptatem tempore dolores ut veniam fugit iusto.
