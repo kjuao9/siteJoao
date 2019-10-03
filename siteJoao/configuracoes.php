@@ -1,3 +1,12 @@
+<?php 
+include_once "conexao.php";
+include "includes/funcoes.php";
+
+session_start();
+$con = conecta_mysql();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-Br">
   <head>
@@ -7,73 +16,37 @@
     <meta author="João Paulo S. Costa">
 
     <!-- Bootstrap CSS -->
-
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/8104logo.ico">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+   
 
-    <title>index</title>
-    <style>
-    article{
-
-    }
-
-    style{
-
-
-    }
-.sidebar {
-  height: 100%;
-  width: 100px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: lavender;
-  overflow-x: hidden;
-  padding: 10px;
-  margin: 0;
-}
-
-    </style>
   </head>
+  <style>
+
+  </style>
   <body>
+<?php
+  require "includes/menu.php";
+  ?>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
-  <?php
-require "includes/menu.php";
-?>
 
 
-<br/>
-<br/>
-<br/>
-
-<div class="sidebar container">
-<br/>
-<br/>
-<br/>
-conteudo<br/>
-+ conteudo<br/>
-ainda + conteudo<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+    <div class="jumbotron text-center abaixo" style="margin-bottom:0">
+  <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p>
 </div>
-<!-- 
-<img id="myImg" src="imagens/compman.gif" alt="Crazy computerman" width="107" height="98">
-O site está em construção! -->
-<article class="container"><p>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur voluptatem non suscipit iure, nesciunt assumenda magnam vel, aperiam voluptatum quaerat provident reprehenderit reiciendis inventore earum maxime molestias sed enim nam!
-</p>
-<p>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur voluptatem non suscipit iure, nesciunt assumenda magnam vel, aperiam voluptatum quaerat provident reprehenderit reiciendis inventore earum maxime molestias sed enim nam!
-</p>
-
-<br/>
-<br/>
-<br/>
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
