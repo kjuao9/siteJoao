@@ -41,6 +41,7 @@ footer {
 .termos{
 height: ;
 padding: 5px;
+vertical-align: 0;
 }
   </style>
   <body>
