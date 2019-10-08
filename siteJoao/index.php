@@ -24,7 +24,7 @@
     }
 .sidebar {
   height: 100%;
-  width: 100px;
+  width: 120px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -56,6 +56,7 @@ require "includes/menu.php";
 conteudo<br/>
 + conteudo<br/>
 ainda + conteudo<br/>
+<img src="imagens/Penguins.jpg" width="100px" height="150px">
 </div>
 <!-- 
 <img id="myImg" src="imagens/compman.gif" alt="Crazy computerman" width="107" height="98">
