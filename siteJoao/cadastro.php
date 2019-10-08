@@ -26,9 +26,11 @@ $con = conecta_mysql();
   <style>
 fieldset {
   border: 1px;
-  border-color: steelblue;
+  /* border-color: steelblue; */
+  border-color: #7d89b3;
   padding: 10px;
   border-style: solid;
+  border-radius: 5px;
 }
 footer {
   background-color: skyblue;
@@ -41,6 +43,7 @@ footer {
 .termos{
 height: ;
 padding: 5px;
+vertical-align: 0;
 }
   </style>
   <body>
@@ -84,8 +87,7 @@ require "includes/menu.php";
   <div class="form-group form-check">
     <label class="form-check-label">
       <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os<span><button type="button" class="btn btn-link termos" data-toggle="modal" data-target="#exampleModalCenter">
- termos de condição
-</button></span>.
+ termos de condição</button></span>.
       <div class="valid-feedback">Válido.</div>
       <div class="invalid-feedback">Marque esta caixa para continuar.</div>
     </label>
@@ -197,8 +199,12 @@ else{
   <br/>
   <br/>
   <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
     <div class="jumbotron text-center abaixo" style="margin-bottom:0">
-  <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p>
+  <!-- <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p> -->
 </div>
 
     <!-- Optional JavaScript -->
