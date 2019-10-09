@@ -31,6 +31,7 @@ fieldset {
   padding: 10px;
   border-style: solid;
   border-radius: 5px;
+  background-color: #e9ecef;
 }
 footer {
   background-color: skyblue;
@@ -110,10 +111,10 @@ require "includes/menu.php";
         </button>
       </div>
       <div class="modal-body">
-      1-Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.<br/>
-      2-O Supremo Criador não se responsabiliza por informações vazadas e fake news.<br/>
-      3-A vida é injusta.
-      &#9312;
+      <li>Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.</li>
+      <li>O Supremo Criador não se responsabiliza por informações vazadas e fake news.</li>
+      <li>A vida é injusta.</li>
+      <!-- <h4><small>&#9312;</small></h4> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -167,6 +168,10 @@ if(isset($_POST["nome"])){
           
   else{
     print "erro de SQL";
+    print "<script>
+    alert('Erro de SQL');
+    window.location.href = 'erro.php';
+    </script>";
     }#else da conexão
       }//if que verifica email
       else{

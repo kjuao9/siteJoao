@@ -22,18 +22,18 @@
 
 
     }
-.sidebar {
+/* .sidebar {
   height: 100%;
   width: 100px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: lavender;
+  background-color: #e9ecef;
   overflow-x: hidden;
   padding: 10px;
   margin: 0;
-}
+} */
 
     </style>
   </head>
@@ -49,7 +49,7 @@ require "includes/menu.php";
 <br/>
 <br/>
 
-<div class="sidebar container">
+<div class="sidebar container col-1">
 <br/>
 <br/>
 <br/>
