@@ -39,6 +39,12 @@ $con = conecta_mysql();
     width: 200px;
     background: #aaa;
   }
+  h1{
+    font-family: "Old English Text MT Regular";
+  }
+  .fonte{
+    font-family: "Old English Text MT Regular";
+  }
   </style>
   <body>
 
@@ -72,6 +78,10 @@ require "includes/menu.php";
 </div> -->
 
 <div class="container" style="margin-top:30px">
+<h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Titulo</h1>
+
+
+<p class="fonte">ABC</p>
   <div class="row">
     <div class="col-sm-4 border border-danger">
       <h2>BLABLA</h2>

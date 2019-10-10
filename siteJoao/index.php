@@ -39,6 +39,12 @@ $con = conecta_mysql();
     width: 200px;
     background: #aaa;
   }
+  body {
+    background-color: azure;
+  }
+  .container{
+    background-color: white;
+  }
   </style>
   <body>
 
@@ -71,9 +77,9 @@ require "includes/menu.php";
 <!-- </div>
 </div> -->
 
-<div class="container" style="margin-top:30px">
+<div class="container border" style="margin-top:30px">
   <div class="row">
-    <div class="col-sm-4 border border-danger">
+    <div class="col-sm-4 ">
       <h2>BLABLA</h2>
       <h5>blablabla</h5>
       <div class="fakeimg">Fake Image</div>
@@ -96,12 +102,13 @@ require "includes/menu.php";
       </ul>
       <hr class="d-sm-none">
     </div>
-    <div class="col-sm-8 border border-primary">
+    <div class="col-sm-8 ">
       <h2>BLABLABLA</h2>
       <h5>Blablablablabla, Dec 7, 2017</h5>
       <div class="fakeimg">Fake Image</div>
       <p>blablabla</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iure recusandae molestiae pariatur eaque? Molestiae voluptatem laborum maxime sed cupiditate, eveniet tempore perferendis repellat explicabo dolore obcaecati enim, illum laudantium quidem non asperiores, ipsam voluptates dolorem voluptas corporis blanditiis expedita.
+        Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       <br>
       <h2>BLABLABLA</h2>
       <h5>Blablablablabla, Sep 2, 2017</h5>
