@@ -47,7 +47,7 @@ require "includes/menu.php";
   <br/>
   <br/>
     <div class="jumbotron text-center abaixo" style="margin-bottom:0">
-  <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p>
+  <!-- <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p> -->
 </div>
 
     <!-- Optional JavaScript -->
