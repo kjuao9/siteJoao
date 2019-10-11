@@ -59,6 +59,7 @@ padding: 10px;
 }
 
 
+
   </style>
   <body style="height: 1500px">
 
@@ -75,8 +76,13 @@ require "includes/menu.php";
 
 <div class="container borda clearfix">
 <p>
-<h2 style="text-align: center">Titulo</h2>
+<h2 class="font-weight-light text-center text-lg-center mt-4 mb-0 centro">Título</h2>
+
+
+
+<!-- <h2 style="text-align: center">Titulo</h2> -->
 <h2 style="text-align: center"><small>Subtítulo</small></h2>
+<hr class="mt-2 mb-5">
 </p>
 <img src="imagens/Koala.jpg" class="imagem clear">
 <div class="justifica"><p>

@@ -36,8 +36,11 @@ require "includes/menu.php";
 <br/>
 <br/>
 
-
 <div class="container">
+<h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Destaques</h1>
+
+<hr class="mt-2 mb-5">
+
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -46,24 +49,24 @@ require "includes/menu.php";
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="imagens/Koala.jpg" class="d-block w-100" alt="abc" style="width:128px height:128px;">
+        <img src="imagens/Koala.jpg" class="d-block w-100" alt="coala" style="width:128px height:128px;">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Coala</h5>
+          <p>Tá olhando o quê camarada? Perdeu a sua bunda por aqui?</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="imagens/Penguins.jpg" class="d-block w-100" alt="def" style="width:128px height:128px;">
+        <img src="imagens/Penguins.jpg" class="d-block w-100" alt="pinguins" style="width:128px height:128px;">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Pinguins</h5>
+          <p>E aí meu chapa, bora tomar uma?</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="imagens/Desert.jpg" class="d-block w-100" alt="ghi" style="width:128px height:128px;">
+        <img src="imagens/Desert.jpg" class="d-block w-100" alt="deserto" style="width:128px height:128px;">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h5>Deserto</h5>
+          <p>Simplesmente um deserto. Sim. Apenas um deserto. Nada mais que um simples deserto.</p>
         </div>
       </div>
     </div>
@@ -77,7 +80,78 @@ require "includes/menu.php";
     </a>
   </div>
 </div>
+  <!-- Page Content -->
+  <div class="container">
 
+<h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Mais fotos</h1>
+
+<hr class="mt-2 mb-5">
+
+<div class="row text-center text-lg-left">
+
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 round">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+        </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#" class="d-block mb-4 h-100 ">
+          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+        </a>
+  </div>
+</div>
+</div>
+<!-- /.container -->
 
 
 

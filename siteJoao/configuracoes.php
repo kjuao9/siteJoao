@@ -1,12 +1,9 @@
 <?php 
+session_start();
 include_once "conexao.php";
 include "includes/funcoes.php";
-
-session_start();
 $con = conecta_mysql();
-
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-Br">
   <head>
@@ -27,8 +24,23 @@ $con = conecta_mysql();
 
   </style>
   <body>
+<br/>
+<br/>
+<br/>
 <?php
   require "includes/menu.php";
+if(isset($_SESSION["id_usuario"]))
+{
+  print "<p class='container'>Bem vindo ".$_SESSION["nome"]."!</p>";
+}
+else{
+  print "<script>
+      alert('Você deve estar logado!');
+      window.location.href = 'index.php';
+             </script>";
+         
+   
+}
   ?>
 <br/>
 <br/>

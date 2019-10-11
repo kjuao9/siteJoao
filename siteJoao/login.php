@@ -88,15 +88,21 @@ require "includes/menu.php";
         $_SESSION["id_usuario"] = $dados_usuario["id_usuario"];
         $_SESSION["nome"] = $dados_usuario["nome"];
         $_SESSION["email"] = $dados_usuario["email"];
-        print $_SESSION["nome"];
+      
         // header("location:index.php");
+        print "<script>
+        window.location.href = 'index.php';
+        </script>";
            }
         else{
         print"<script> alert('e-mail e senha não conferem'); </script>";
           }
              }
             else{
-              print "Erro de SQL";
+              print "<script>
+              alert('Erro de SQL');
+              window.location.href = 'erro.php';
+              </script>";
               }
               }
 ?>

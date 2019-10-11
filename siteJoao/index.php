@@ -14,26 +14,25 @@
 
     <title>index</title>
     <style>
-    article{
-
-    }
-
-    style{
-
-
-    }
-.sidebar {
+ .qqfaz{
+   clear: both;
+   display: block;
+   @include clearfix;
+   
+   
+ }
+/* .sidebar {
   height: 100%;
-  width: 120px;
+  width: 100px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: lavender;
+  background-color: #e9ecef;
   overflow-x: hidden;
   padding: 10px;
   margin: 0;
-}
+} */
 
     </style>
   </head>
@@ -49,19 +48,18 @@ require "includes/menu.php";
 <br/>
 <br/>
 
-<div class="sidebar container">
+<div class="sidebar container border qqfaz">
 <br/>
 <br/>
 <br/>
 conteudo<br/>
 + conteudo<br/>
 ainda + conteudo<br/>
-<img src="imagens/Penguins.jpg" width="100px" height="150px">
 </div>
 <!-- 
 <img id="myImg" src="imagens/compman.gif" alt="Crazy computerman" width="107" height="98">
 O site está em construção! -->
-<article class="container"><p>
+<article class="container border"><p>
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur voluptatem non suscipit iure, nesciunt assumenda magnam vel, aperiam voluptatum quaerat provident reprehenderit reiciendis inventore earum maxime molestias sed enim nam!
 </p>
 <p>

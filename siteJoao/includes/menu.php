@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 
 </head>
+<style>
+.linknormal, .linknormal:hover, .linknormal:active, .linknormal:link, .linknormal:visited{
+  color: #FFF;
+  text-decoration: none;
+  display: inline-block;
+}
+@import url(OLDENGL.TTF);
+/* @font-face{
+  font-family: "Old English Text MT Regular";
+  src: OLDENGL.TTF;
+  src: url(https://www.fonts.com/font/monotype/monotype-old-english-text?QueryFontType=Web&src=GoogleWebFonts);
+} */
+</style>
     <body>
 
 
@@ -51,7 +64,7 @@
   </div>
   <div id="fonte_old_english" class=".col-6 text-white">
   <!-- Transformar o texto abaixo em link -->
-    <!-- <h2 style="font-family: Old English Text MT Regular">The Janaúba Times</h2> -->
+    <!-- <a href="index.php"><h2 style="font-family: Old English Text MT Regular" class="linknormal">The Janaúba Times</h2></a> -->
 </div>
 <!-- colocar p/ o butão fechar -->
 

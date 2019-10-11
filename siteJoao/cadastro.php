@@ -26,9 +26,12 @@ $con = conecta_mysql();
   <style>
 fieldset {
   border: 1px;
-  border-color: steelblue;
+  /* border-color: steelblue; */
+  border-color: #7d89b3;
   padding: 10px;
   border-style: solid;
+  border-radius: 5px;
+  background-color: #e9ecef;
 }
 footer {
   background-color: skyblue;
@@ -63,6 +66,8 @@ require "includes/menu.php";
     <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome" name="nome" required autofocus>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">Por favor, preencha este campo.</div>
+ 
+  
   </div>
   <div class="form-group">
     <label for="senha">Senha:</label>
@@ -85,10 +90,10 @@ require "includes/menu.php";
   <div class="form-group form-check">
     <label class="form-check-label">
       <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os<span><button type="button" class="btn btn-link termos" data-toggle="modal" data-target="#exampleModalCenter">
- termos de condição
-</button></span>.
+ termos de condição</button></span>.
       <div class="valid-feedback">Válido.</div>
       <div class="invalid-feedback">Marque esta caixa para continuar.</div>
+      
     </label>
   </div>
   <button type="submit" class="btn btn-primary">Enviar</button>
@@ -109,10 +114,11 @@ require "includes/menu.php";
         </button>
       </div>
       <div class="modal-body">
-      1-Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.<br/>
-      2-O Supremo Criador não se responsabiliza por informações vazadas e fake news.<br/>
-      3-A vida é injusta.
-      &#9312;
+      <li>Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.</li>
+      <li>Só estou enchendo linguiça para isso aqui parecer algo decente.</li>
+      <li>Mããããeeee compra biscoitooooo</li>
+      <li>A vida é injusta.</li>
+      <!-- <h4><small>&#9312;</small></h4> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -166,6 +172,10 @@ if(isset($_POST["nome"])){
           
   else{
     print "erro de SQL";
+    print "<script>
+    alert('Erro de SQL');
+    window.location.href = 'erro.php';
+    </script>";
     }#else da conexão
       }//if que verifica email
       else{
@@ -198,8 +208,12 @@ else{
   <br/>
   <br/>
   <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
     <div class="jumbotron text-center abaixo" style="margin-bottom:0">
-  <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p>
+  <!-- <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p> -->
 </div>
 
     <!-- Optional JavaScript -->
