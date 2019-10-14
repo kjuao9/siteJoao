@@ -22,6 +22,16 @@ $con = conecta_mysql();
    
     <title>Galeria</title>
   </head>
+  <style>
+ .semlink, .semlink:hover, .semlink:active, .semlink:link, .semlink:visited{
+  color: #FFF;
+  text-decoration: none;
+  display: inline-block;
+
+font-weight:normal;
+font-style:normal;
+  }
+  </style>
   <body style="height: 1500px">
 
 
@@ -46,6 +56,7 @@ require "includes/menu.php";
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -69,6 +80,13 @@ require "includes/menu.php";
           <p>Simplesmente um deserto. Sim. Apenas um deserto. Nada mais que um simples deserto.</p>
         </div>
       </div>
+      <div class="carousel-item">
+        <img src="imagens/parrot.gif" class="d-block w-100" alt="papagaio" style="width:128px height:128px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Papagaio</h5>
+          <p>Papagaio dançante.</p>
+        </div>
+      </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -90,12 +108,14 @@ require "includes/menu.php";
 <div class="row text-center text-lg-left">
 
   <div class="col-lg-3 col-md-4 col-6">
-    <a href="#" class="d-block mb-4 h-100">
+    <a href="https://source.unsplash.com/pWkk7iiCoDM/" class="d-block mb-4 h-100">
           <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
-        </a>
+          <span class="semlink"><figcaption class="figure-caption">A caption for the above image.</figcaption></span>
+          </a>
+          
   </div>
   <div class="col-lg-3 col-md-4 col-6">
-    <a href="#" class="d-block mb-4 h-100">
+    <a href="https://source.unsplash.com/aob0ukAYfuI/" class="d-block mb-4 h-100">
           <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
         </a>
   </div>
