@@ -40,7 +40,15 @@ require "includes/menu.php";
 <br/>
 <br/>
 <br/>
+<div class="container" style="text-align: center">
 <h1 style="text-align: center">Conga!</h1>
+<h2>Audio para acompanhar</h2>
+<audio controls>
+  <source src="includes/Kalimba.mp3" type="audio/mpeg">
+
+Seu Navegador não suporta audio :-(
+</audio>
+</div>
 <img src="imagens/congapartyparrot.gif" class="img">
 <img src="imagens/congapartyparrot.gif" class="img">
 <img src="imagens/congapartyparrot.gif" class="img">
@@ -54,6 +62,13 @@ require "includes/menu.php";
 <img src="imagens/congaparrot.gif" class="img">
 <img src="imagens/congaparrot.gif" class="img">
 <img src="imagens/congaparrot.gif" class="img">
+
+<img src="imagens/reversecongaparrot.gif" class="img">
+<img src="imagens/reversecongaparrot.gif" class="img">
+<img src="imagens/reversecongaparrot.gif" class="img">
+<img src="imagens/reversecongaparrot.gif" class="img">
+<img src="imagens/reversecongaparrot.gif" class="img">
+<img src="imagens/reversecongaparrot.gif" class="img">
 
 
   <br/>
