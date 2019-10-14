@@ -13,6 +13,9 @@
   color: #FFF;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Old English Text MT';
+font-weight:normal;
+font-style:normal;
 }
 /* @import url(OLDENGL.TTF); */
 /* @font-face{
@@ -40,9 +43,7 @@ url("OldEnglishTextMT.ttf") format("ttf"),
 url("OldEnglishTextMT.eot") format("eot");
 }
 h2{
-font-family: 'Old English Text MT';
-font-weight:normal;
-font-style:normal;
+
 }
 </style>
     <body>
