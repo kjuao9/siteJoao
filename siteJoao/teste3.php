@@ -39,12 +39,12 @@ $con = conecta_mysql();
     width: 200px;
     background: #aaa;
   }
-  h1{
+  /* h1{
     font-family: "Old English Text MT Regular";
   }
   .fonte{
     font-family: "Old English Text MT Regular";
-  }
+  } */
   </style>
   <body>
 

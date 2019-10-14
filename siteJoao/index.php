@@ -39,6 +39,10 @@ $con = conecta_mysql();
     width: 200px;
     background: #aaa;
   }
+  .img{
+    height: 200px;
+    width: 200px;
+  }
   body {
     background-color: azure;
   }
@@ -76,14 +80,14 @@ require "includes/menu.php";
   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iste assumenda veritatis explicabo exercitationem, ut alias ex corrupti tenetur vitae recusandae quo nam necessitatibus id ea enim corporis excepturi accusantium consequatur! Assumenda doloremque consectetur et aperiam ut nulla mollitia! -->
 <!-- </div>
 </div> -->
-
+<h1 style="text-align: center; font-family: Times New Roman">GOIABA </h1>
 <div class="container border" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-4 ">
-      <h2>BLABLA</h2>
-      <h5>blablabla</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>lorem ipsum numseioq numseioq in culpa qui officia deserunt mollit anim..</p>
+      <h2>Festeje ou morra!</h2>
+      <h5></h5>
+      <div class="img"><img src="imagens/parrot.gif" class="img"></div>
+      <p>Olha só que lindo papagaio. Você quer realmente deixá-lo dançando sozinho? Seu monstro!</p>
       <h3>Some Links</h3>
       <p>Lorem ipsum dolor sit ame.</p>
       <ul class="nav nav-pills flex-column">

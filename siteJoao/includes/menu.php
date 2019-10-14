@@ -91,7 +91,7 @@ h2{
   <div id="fonte_old_english" class=".col-6 text-white">
   <!-- Transformar o texto abaixo em link -->
   <!-- style abaixo: font-family: Old Enlish Text MT (Regular) -->
-    <a href="index.php"><h2 style="" class="linknormal">The Janaúba Times</h2></a>
+    <!-- <a href="index.php"><h2 style="" class="linknormal">The Janaúba Times</h2></a> -->
 </div>
 <!-- colocar p/ o butão fechar -->
 
