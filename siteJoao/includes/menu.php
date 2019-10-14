@@ -35,12 +35,13 @@ font-family: "Varela Round";
 } */
 @font-face {
 font-family: "Old English Text MT2";
-src: url("OLDENGL.TTF");
+src: url("OldEnglishTextMT.eot") format("eot");
 src:
 url("OldEnglishTextMT.woff") format("woff"),
 url("OldEnglishTextMT.woff2") format("woff2"),
-url("OldEnglishTextMT.ttf") format("ttf"),
-url("OldEnglishTextMT.eot") format("eot");
+url("OldEnglishTextMT.ttf") format("true type");
+font-weight: normal;
+font-style: normal;
 }
 h2{
 
