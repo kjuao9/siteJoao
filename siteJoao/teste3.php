@@ -64,24 +64,51 @@ require "includes/menu.php";
 	fclose($handle);
 
 <?php
-function decerto($con){
-$sql = "SELECT * from noticias";
+// function decerto($con){
+// $sql = "SELECT * from noticias";
+// $resultado = mysqli_query($con, $sql);
+// if($resultado){
+//   $res = array();
+//   while($linha = mysqli_fetch_assoc($resultado)){
+//     $res[] =$linha;
+//   }
+// }
+// return $res;
+// };
+// $x = decerto($con);
+// foreach ($x as $y){
+//   print $y["titulo"];
+//   print "<br/><br/>";
+//   print $y["texto_noticia"];
+// }
+
+$sql = "SELECT * from noticias where True";
 $resultado = mysqli_query($con, $sql);
 if($resultado){
   $res = array();
+  // $res = mysqli_fetch_assoc($resultado);
+  // foreach($res as $x){
+  //   print $res["titulo"];
+  // }
+ 
   while($linha = mysqli_fetch_assoc($resultado)){
-    $res[] =$linha;
+    $res[] = $linha;
   }
-}
-return $res;
-};
-$x = decerto($con);
-foreach ($x as $y){
-  print $y["titulo"];
-  print "<br/>";
-  print $y["texto_postagem"];
-}
 
+  foreach($res as $x){
+    echo "<br/>";
+    echo $x["titulo"];
+    print "<br/>";
+    print $x["subtitulo"];
+    print "<br/>";
+    print $x["texto_noticia"];
+    print "<br/>";
+    print $x["data_postagem"];
+   print "<br/>";
+
+  }
+  // print_r($res);
+}
 ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
