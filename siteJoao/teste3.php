@@ -39,6 +39,37 @@ $con = conecta_mysql();
     width: 200px;
     background: #aaa;
   }
+  .borda{
+  border: 1px;
+  border-style: solid;
+  
+}
+.bordap{
+  border: 1px;
+  padding: 5px;
+
+  border-style: solid;
+  border-color: red;
+  text-align: justify;
+}
+.imagem{
+height: 230px;
+width: 230px;
+float: right;
+padding: 10px;
+
+}
+.clear{
+  clear: both;
+
+}
+.clearfix{
+  overflow: auto;
+}
+.justifica{
+  text-align: justify;
+
+}
   /* h1{
     font-family: "Old English Text MT Regular";
   }
@@ -97,14 +128,29 @@ if($resultado){
 
   foreach($res as $x){
     echo "<br/>";
-    echo $x["titulo"];
+    print "<div class='container borda clearfix'>";
+   
+    print "<p>";
+    print "<h2 style='text-align: center'>";
+    print $x["titulo"];
+    print "</h2>";
     print "<br/>";
+    print "<h2 style='text-align: center'>";
+   print "<small>";
     print $x["subtitulo"];
-    print "<br/>";
+    print "</small>";
+    print "</h2>";
+    print "</p>";
+
+    print "<div class='justifica'>";
+    print "<p>";
     print $x["texto_noticia"];
-    print "<br/>";
-    print $x["data_postagem"];
-   print "<br/>";
+    print "</p>";
+    print "</div>";
+    print "</div>";
+  //   print "<br/>";
+  //   print $x["data_postagem"];
+  //  print "<br/>";
 
   }
   // print_r($res);
