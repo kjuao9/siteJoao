@@ -1,12 +1,9 @@
 <?php 
+session_start();
 include_once "conexao.php";
 include "includes/funcoes.php";
-
-session_start();
 $con = conecta_mysql();
-
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-Br">
   <head>
@@ -24,11 +21,28 @@ $con = conecta_mysql();
 
   </head>
   <style>
-
+.clear{
+  clear: both;
+}
   </style>
   <body>
+<br/>
+<br/>
+<br/>
 <?php
   require "includes/menu.php";
+if(isset($_SESSION["id_usuario"]))
+{
+  print "<p class='container'>Bem vindo ".$_SESSION["nome"]."!</p>";
+}
+else{
+  print "<script>
+      alert('Você deve estar logado!');
+      window.location.href = 'index.php';
+             </script>";
+         
+   
+}
   ?>
 <br/>
 <br/>
@@ -37,8 +51,23 @@ $con = conecta_mysql();
 <br/>
 
 
-
-
+<div class="container">
+		<div class="borda-arredondada">
+			Nome: <span class="negrito-maior"><?php print$_SESSION["nome"]?></span> <br/>
+			E-mail: <span class="italico"><?php print$_SESSION["email"]?></span> <br/>
+			Código: <span class="italico"><?php print$_SESSION["id_usuario"]?></span><br/>
+		</div>
+		<div class="clear">
+    <ul>
+		<li><a href="alterar_usuario_email.php">Alterar E-mail do Usuário</a><br/><br/></li>
+    <li><a href="alterar_usuario_nome.php">Alterar Nome do Usuário</a><br/><br/></li>
+    <li><a href="alterar_usuario_senha.php">Alterar Senha do Usuário</a><br/><br/></li>
+    <li><a href="alterar_postagens.php">Alterar Postagens</a><br/><br/></li>
+			<!-- <a href="excluir_postagens-1.php">Excluir Postagens (Digitando Código)</a><br/><br/> -->
+			<li><a href="excluir_postagens-2.php">Excluir Postagens</a><br/></li>
+</ul>
+		</div>
+	</div> 
   <br/>
   <br/>
   <br/>

@@ -26,9 +26,13 @@ $con = conecta_mysql();
   <style>
 fieldset {
   border: 1px;
-  border-color: steelblue;
+  /* border-color: steelblue; */
+  border-color: #7d89b3;
   padding: 10px;
   border-style: solid;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  background: #e9ecef -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9ecef));
 }
 footer {
   background-color: skyblue;
@@ -38,10 +42,18 @@ footer {
   padding: 0px;
   margin: 0px;
 }
+.jumbotron{
+  background-color: #ECE9E9;
+}
 .termos{
 height: ;
 padding: 5px;
 vertical-align: 0;
+}
+body{
+  /*#ECE9E9 */
+  background-color: #ECE9E9;
+background: #ECE9E9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9));
 }
   </style>
   <body>
@@ -66,13 +78,13 @@ require "includes/menu.php";
   </div>
   <div class="form-group">
     <label for="senha">Senha:</label>
-    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required minlength="8">
+    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">A senha deve ter no minímo 8 caracteres.</div>
   </div>
   <div class="form-group">
     <label for="senha2">Repita a senha:</label>
-    <input type="password" class="form-control" id="senha2" placeholder="Digite novamente a senha" name="senha2" required minlength="8">
+    <input type="password" class="form-control" id="senha2" placeholder="Digite novamente a senha" name="senha2" required>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">A senha deve ter no minímo 8 caracteres e ser idêntica a digitada.</div>
   </div>
@@ -85,8 +97,7 @@ require "includes/menu.php";
   <div class="form-group form-check">
     <label class="form-check-label">
       <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os<span><button type="button" class="btn btn-link termos" data-toggle="modal" data-target="#exampleModalCenter">
- termos de condição
-</button></span>.
+ termos de condição</button></span>.
       <div class="valid-feedback">Válido.</div>
       <div class="invalid-feedback">Marque esta caixa para continuar.</div>
     </label>
@@ -109,10 +120,10 @@ require "includes/menu.php";
         </button>
       </div>
       <div class="modal-body">
-      1-Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.<br/>
-      2-O Supremo Criador não se responsabiliza por informações vazadas e fake news.<br/>
-      3-A vida é injusta.
-      &#9312;
+      <li>Ao clicar em aceito, você estará doando sua alma a João Paulo, o criador de tudo.</li>
+      <li>O Supremo Criador não se responsabiliza por informações vazadas e fake news.</li>
+      <li>A vida é injusta.</li>
+      <!-- <h4><small>&#9312;</small></h4> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -143,7 +154,7 @@ require "includes/menu.php";
 })();
 </script>
 <?php 
-if(isset($_POST["nome"])){
+if(isset($_POST["nome"])){ 
   $nome = $_POST["nome"];
   $email = $_POST["email"];
   $senha = $_POST["senha"];
@@ -166,6 +177,10 @@ if(isset($_POST["nome"])){
           
   else{
     print "erro de SQL";
+    print "<script>
+    alert('Erro de SQL');
+    window.location.href = 'erro.php';
+    </script>";
     }#else da conexão
       }//if que verifica email
       else{
@@ -198,8 +213,12 @@ else{
   <br/>
   <br/>
   <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
     <div class="jumbotron text-center abaixo" style="margin-bottom:0">
-  <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p>
+  <!-- <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p> -->
 </div>
 
     <!-- Optional JavaScript -->
