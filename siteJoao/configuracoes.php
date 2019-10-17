@@ -59,7 +59,7 @@ else{
 		</div>
 		<div class="clear">
     <ul>
-		<li><a href="alterar_usuario_email.php">Alterar E-mail do Usuário</a><br/><br/></li>
+		<li><a href="config/alterar_usuario_email.php">Alterar E-mail do Usuário</a><br/><br/></li>
     <li><a href="alterar_usuario_nome.php">Alterar Nome do Usuário</a><br/><br/></li>
     <li><a href="alterar_usuario_senha.php">Alterar Senha do Usuário</a><br/><br/></li>
     <li><a href="alterar_postagens.php">Alterar Postagens</a><br/><br/></li>

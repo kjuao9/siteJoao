@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<?php
 		session_start();
-		if ( !isset($_SESSION["codigo"])){
+		if ( !isset($_SESSION["id_usuario"])){
 			header("location:index.php?erro=2");
 		}
 		include_once "conexao.php";

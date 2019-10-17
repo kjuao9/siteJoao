@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 	<?php
 		session_start();
-		if ( !isset($_SESSION["codigo"]) ){
-			header("location:index.php?erro=2");
+		if ( !isset($_SESSION["id_usuario"]) ){
+			header("location:../erro.php");
         }
         include_once "conexao.php";
         $id_usuario = $_SESSION["codigo"];
