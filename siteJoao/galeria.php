@@ -31,6 +31,9 @@ $con = conecta_mysql();
 font-weight:normal;
 font-style:normal;
   }
+  body {
+    background-color: azure;
+  }
   </style>
   <body style="height: 1500px">
 

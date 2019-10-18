@@ -45,10 +45,13 @@ $con = conecta_mysql();
   }
   body {
     background-color: azure;
+    /* background-color: #fafbfc; */
   }
   .container{
     background-color: white;
   }
+
+
   </style>
   <body>
 
@@ -81,13 +84,14 @@ require "includes/menu.php";
 <!-- </div>
 </div> -->
 <h1 style="text-align: center; font-family: Times New Roman">GOIABA </h1>
+
 <div class="container border" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-4 ">
-      <h2 style="font-weight: lighter;">Festeje ou morra!</h2>
+      <!-- <h2 style="font-weight: lighter;">Festeje ou morra!</h2> -->
       <h5></h5>
-      <div class="img"><img src="imagens/parrot.gif" class="img" alt="birb"></div>
-      <p>Olha só que lindo papagaio. Você quer realmente deixá-lo dançando sozinho? Seu monstro!</p>
+      <!-- <div class="img"><img src="imagens/parrot.gif" class="img" alt="birb"></div> -->
+      <!-- <p>Olha só que lindo papagaio. Você quer realmente deixá-lo dançando sozinho? Seu monstro!</p> -->
       <h3>Some Links</h3>
       <p>Lorem ipsum dolor sit ame.</p>
       <ul class="nav nav-pills flex-column">
@@ -131,6 +135,7 @@ require "includes/menu.php";
     <div class="jumbotron text-center abaixo" style="margin-bottom:0">
   <!-- <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p> -->
 </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

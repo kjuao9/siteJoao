@@ -17,6 +17,9 @@ session_start();
     .abaixo{
       margin: 0;
     }
+    body {
+    background-color: azure;
+  }
     </style>
      </head>
   <body>

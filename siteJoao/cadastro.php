@@ -31,20 +31,32 @@ fieldset {
   padding: 10px;
   border-style: solid;
   border-radius: 5px;
+  /*azul bem claro com cinza quase azure*/
   background-color: #e9ecef;
+  background: #e9ecef -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9ecef));
 }
 footer {
-  background-color: skyblue;
+  /* background-color: skyblue; */
   padding: 0px;
 }
 * {
   padding: 0px;
   margin: 0px;
 }
+.jumbotron{
+  /* background-color: #ECE9E9; */
+}
 .termos{
 height: ;
 padding: 5px;
 vertical-align: 0;
+}
+body{
+  /*#ECE9E9 */
+  /*branco com cinza claro*/
+  /* background-color: #ECE9E9; */
+/* background: #ECE9E9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9)); */
+background-color: azure;
 }
   </style>
   <body>
@@ -69,13 +81,13 @@ require "includes/menu.php";
   </div>
   <div class="form-group">
     <label for="senha">Senha:</label>
-    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required minlength="8">
+    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">A senha deve ter no minímo 8 caracteres.</div>
   </div>
   <div class="form-group">
     <label for="senha2">Repita a senha:</label>
-    <input type="password" class="form-control" id="senha2" placeholder="Digite novamente a senha" name="senha2" required minlength="8">
+    <input type="password" class="form-control" id="senha2" placeholder="Digite novamente a senha" name="senha2" required>
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">A senha deve ter no minímo 8 caracteres e ser idêntica a digitada.</div>
   </div>
@@ -145,7 +157,7 @@ require "includes/menu.php";
 })();
 </script>
 <?php 
-if(isset($_POST["nome"])){
+if(isset($_POST["nome"])){ 
   $nome = $_POST["nome"];
   $email = $_POST["email"];
   $senha = $_POST["senha"];

@@ -57,7 +57,12 @@ padding: 10px;
   text-align: justify;
 
 }
-
+body {
+    background-color: azure;
+  }
+#noticia{
+    background-color: #e9ecefbd;
+  }
 
 
   </style>
@@ -74,7 +79,7 @@ require "includes/menu.php";
 <br/>
 <br/>
 
-<div class="container borda clearfix">
+<div class="container borda clearfix" id="noticia">
 <p>
 <h2 class="font-weight-light text-center text-lg-center mt-4 mb-0 centro">Título</h2>
 
@@ -97,10 +102,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque at alias in
 <br/>
 <br/>
 
-<h2><a href="#"><i class="fas fa-thumbs-down"></i></a></h2>
+<!-- <h2><a href="#"><i class="fas fa-thumbs-down"></i></a></h2> -->
 
 
-<div class="container borda clearfix">
+<div class="container borda clearfix" id="noticia">
 <p>
 <h2 style="text-align: center">Titulo</h2>
 <h2 style="text-align: center"><small>Subtítulo</small></h2>
@@ -116,7 +121,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque at alias in
 <br/>
 <br/>
 
-<div class="container borda clearfix">
+<div class="container borda clearfix" id="noticia">
 <p>
 <h2 style="text-align: center">Bêbado briga com uma árvore: árvore vence</h2>
 <h2 style="text-align: center"><small>O caso aconteceu na quinta-feira no bairro Saudade</small></h2>
