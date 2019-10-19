@@ -82,7 +82,11 @@ h2{
           <a class="dropdown-item" href="login.php">Login</a>
           <a class="dropdown-item" href="cadastro.php">Cadastro</a>
           <a class="dropdown-item" href="configuracoes.php">Configurações</a>
-          <a class="dropdown-item" href="sair.php">Sair</a>
+                   <?php 
+                 if(isset($_SESSION["id_usuario"])){
+            print "<a class='dropdown-item' href='sair.php'>Sair</a>";
+          }
+          ?>
         </div>
       </li>
     </ul>
