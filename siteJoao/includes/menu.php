@@ -1,3 +1,4 @@
+
 <head>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -82,7 +83,13 @@ h2{
           <a class="dropdown-item" href="login.php">Login</a>
           <a class="dropdown-item" href="cadastro.php">Cadastro</a>
           <a class="dropdown-item" href="configuracoes.php">Configurações</a>
-          <a class="dropdown-item" href="sair.php">Sair</a>
+          <?php 
+       
+          if(isset($_SESSION["id_usuario"])){
+            print "<a class='dropdown-item' href='sair.php'>Sair</a>";
+          }
+          ?>
+        
         </div>
       </li>
     </ul>
@@ -91,7 +98,7 @@ h2{
   <div id="fonte_old_english" class=".col-6 text-white">
   <!-- Transformar o texto abaixo em link -->
   <!-- style abaixo: font-family: Old Enlish Text MT (Regular) -->
-    <!-- <a href="index.php"><h2 style="" class="linknormal">The Janaúba Times</h2></a> -->
+    <a href="index.php"><h2 style="" class="linknormal">The Janaúba Times</h2></a>
 </div>
 <!-- colocar p/ o butão fechar -->
 
