@@ -83,7 +83,7 @@ require "includes/menu.php";
   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iste assumenda veritatis explicabo exercitationem, ut alias ex corrupti tenetur vitae recusandae quo nam necessitatibus id ea enim corporis excepturi accusantium consequatur! Assumenda doloremque consectetur et aperiam ut nulla mollitia! -->
 <!-- </div>
 </div> -->
-<h1 style="text-align: center; font-family: Times New Roman">GOIABA </h1>
+<h1 style="text-align: center; font-family: Times New Roman">Queijo </h1>
 
 <div class="container border" style="margin-top:30px">
   <div class="row">
@@ -92,6 +92,13 @@ require "includes/menu.php";
       <h5></h5>
       <!-- <div class="img"><img src="imagens/parrot.gif" class="img" alt="birb"></div> -->
       <!-- <p>Olha só que lindo papagaio. Você quer realmente deixá-lo dançando sozinho? Seu monstro!</p> -->
+      <p>
+      <?php 
+      if(isset($_SESSION["id_usuario"])){
+        print "Seja bem-vindo ".$_SESSION["nome"]."!";
+      }
+      ?>
+      </p>
       <h3>Some Links</h3>
       <p>Lorem ipsum dolor sit ame.</p>
       <ul class="nav nav-pills flex-column">

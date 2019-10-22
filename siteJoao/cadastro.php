@@ -17,47 +17,48 @@ $con = conecta_mysql();
 
     <!-- Bootstrap CSS -->
     <link rel="shortcut icon" type="image/x-icon" href="imagens/8104logo.ico">
+    <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">
+
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
    
 
   </head>
   <style>
 fieldset {
-  border: 1px;
-  /* border-color: steelblue; */
-  border-color: #7d89b3;
-  padding: 10px;
-  border-style: solid;
-  border-radius: 5px;
-  /*azul bem claro com cinza quase azure*/
-  background-color: #e9ecef;
-  background: #e9ecef -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9ecef));
-}
-footer {
-  /* background-color: skyblue; */
-  padding: 0px;
-}
-* {
-  padding: 0px;
-  margin: 0px;
-}
-.jumbotron{
-  /* background-color: #ECE9E9; */
-}
-.termos{
-height: ;
-padding: 5px;
-vertical-align: 0;
-}
-body{
-  /*#ECE9E9 */
-  /*branco com cinza claro*/
-  /* background-color: #ECE9E9; */
-/* background: #ECE9E9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9)); */
-background-color: azure;
-}
+    border: 1px;
+    /* border-color: steelblue; */
+    border-color: #7d89b3;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    /*azul bem claro com cinza quase azure*/
+    background-color: #e9ecef;
+    background: #e9ecef -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9ecef));
+  }
+  footer {
+    /* background-color: skyblue; */
+    padding: 0px;
+  }
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  .jumbotron{
+    /* background-color: #ECE9E9; */
+  }
+  .termos{
+  height: ;
+  padding: 5px;
+  vertical-align: 0;
+  }
+  body{
+    /*#ECE9E9 */
+    /*branco com cinza claro*/
+    /* background-color: #ECE9E9; */
+  /* background: #ECE9E9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9)); */
+  background-color: azure;
+  }
   </style>
   <body>
 <?php
@@ -99,7 +100,7 @@ require "includes/menu.php";
   </div>
   <div class="form-group form-check">
     <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os<span><button type="button" class="btn btn-link termos" data-toggle="modal" data-target="#exampleModalCenter">
+      <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os <span><button type="button" style="padding: 0;" class="btn btn-link termos" data-toggle="modal" data-target="#exampleModalCenter">
  termos de condição</button></span>.
       <div class="valid-feedback">Válido.</div>
       <div class="invalid-feedback">Marque esta caixa para continuar.</div>
@@ -137,6 +138,9 @@ require "includes/menu.php";
 </div>
 
 <script>
+/*codigo abaixo não permite o usuário enviar o formulário sem que esteja 
+preenchido corretamente
+*/
 // Disable form submissions if there are invalid fields
 (function() {
   'use strict';
