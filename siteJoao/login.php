@@ -17,6 +17,9 @@ session_start();
     .abaixo{
       margin: 0;
     }
+    body {
+    background-color: azure;
+  }
     </style>
      </head>
   <body>
@@ -45,7 +48,7 @@ require "includes/menu.php";
     <div class="valid-feedback">Válido.</div>
     <div class="invalid-feedback">Por favor, preencha este campo.</div>
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary">Fazer login</button>
   <button type="reset" class="btn btn-secondary">Limpar</button>
 </form>
 </div>
@@ -117,8 +120,26 @@ require "includes/menu.php";
   <br/>
   <br/>
   <br/>
+  <br/>
+  <br/>
+  <br/>
+
+
+  
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
     <div class="jumbotron text-center abaixo" style="margin-bottom:0">
-  <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p>
+  <!-- <p>The Janaúba Times<sup>&copy;</sup> 2019. Todos os direitos reservados</p> -->
 </div>
 
   

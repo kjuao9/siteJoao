@@ -24,7 +24,9 @@ $con = conecta_mysql();
 
   </head>
   <style>
-
+ body {
+    background-color: azure;
+  }
   </style>
   <body>
 

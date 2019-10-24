@@ -1,8 +1,8 @@
 <?php
 function conecta_mysql(){
 	$host = "localhost";
-	$usuario = "root";
-	$senha = "";
+	$usuario = "phpmyadmin";
+	$senha = "root";
 	$nome_bd = "joaopaulo";
 
 	$conexao = mysqli_connect($host,$usuario,$senha,$nome_bd);
